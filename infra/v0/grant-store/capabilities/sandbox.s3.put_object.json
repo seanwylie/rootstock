@@ -1,0 +1,20 @@
+{
+  "id": "sandbox.s3.put_object",
+  "schema_version": 1,
+  "description": "Write an object to a Rootstock-owned Sandbox bucket",
+  "zone": "sandbox",
+  "parameter_schema": {
+    "suffix": {"type": "string", "pattern": "^[a-z0-9-]{3,40}$"},
+    "key": {"type": "string", "pattern": "^[a-zA-Z0-9/._-]{1,256}$"}
+  },
+  "scope": "objects in rootstock-sbx-* buckets",
+  "risk_class": "low",
+  "autonomy_level": "L3",
+  "requires_approval": false,
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": true,
+    "reconciliation": "object_exists",
+    "retry_after_unknown": "reconcile_then_retry"
+  }
+}

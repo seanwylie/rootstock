@@ -1,0 +1,4 @@
+# Copy to terraform.tfvars (gitignored) before apply.
+# AWS Budgets will email this address on threshold and action events.
+
+budget_alert_email = "ops@example.com"

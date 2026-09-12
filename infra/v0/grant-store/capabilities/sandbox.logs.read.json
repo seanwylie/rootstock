@@ -1,0 +1,17 @@
+{
+  "id": "sandbox.logs.read",
+  "schema_version": 1,
+  "description": "Read CloudWatch logs in Sandbox",
+  "zone": "sandbox",
+  "parameter_schema": {"log_group": {"type": "string", "required": true}},
+  "scope": "Sandbox log groups",
+  "risk_class": "low",
+  "autonomy_level": "L4",
+  "requires_approval": false,
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": true,
+    "reconciliation": "none",
+    "retry_after_unknown": "retry"
+  }
+}

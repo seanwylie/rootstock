@@ -1,0 +1,25 @@
+{
+  "status": "blocked",
+  "error": "AccessDeniedException: Converse — account currently being verified. Verification normally takes less than 2 hours. Contact aws-verification@amazon.com if still blocked after that.",
+  "count": 0,
+  "wanted": 12,
+  "first_cycle": 220,
+  "cycles": [],
+  "actions": {
+    "noop": 0,
+    "enqueued": 0
+  },
+  "wake_state": "DISABLED",
+  "reasoner_restored": "stub",
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "terra_usd": 0.0,
+  "leftover_stub_buckets": 141,
+  "extra_stub_cycles_after_172": [
+    173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187,
+    188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 208,
+    209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219
+  ],
+  "cursor_next_cycle": 220,
+  "finished_at": "2026-08-28T20:15:00Z"
+}

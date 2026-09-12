@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Terraform: state may contain resource identifiers; tfvars may contain account ids
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+terraform.tfvars
+!terraform.tfvars.example
+
+# Operator-local AWS account map. Copy infra/accounts.example.json.
+infra/accounts.json
+
+.env
+.envrc
+.DS_Store
+.release-audit/

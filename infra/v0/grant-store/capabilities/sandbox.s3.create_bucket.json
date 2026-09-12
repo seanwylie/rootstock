@@ -1,0 +1,24 @@
+{
+  "id": "sandbox.s3.create_bucket",
+  "schema_version": 1,
+  "description": "Create an S3 bucket in the Sandbox account",
+  "zone": "sandbox",
+  "parameter_schema": {
+    "suffix": {"type": "string", "pattern": "^[a-z0-9-]{3,40}$"},
+    "purpose": {"type": "string", "required": true}
+  },
+  "scope": "buckets prefixed rootstock-sbx-*; tagged at creation",
+  "risk_class": "low",
+  "cost_model": "negligible",
+  "credential": "RootstockSandboxOperatorRole",
+  "autonomy_level": "L3",
+  "requires_approval": false,
+  "rate_limit": "10/day",
+  "audit": "full",
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": false,
+    "reconciliation": "bucket_exists(rootstock-sbx-<suffix>)",
+    "retry_after_unknown": "reconcile_then_retry"
+  }
+}

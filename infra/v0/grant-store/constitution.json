@@ -1,0 +1,27 @@
+{
+  "version": "0.0.0",
+  "name": "Rootstock constitution",
+  "runtime_write": false,
+  "invariants": [
+    "AR-1",
+    "AR-2",
+    "AR-3",
+    "AR-4",
+    "AR-5",
+    "AR-6",
+    "AR-7",
+    "AR-8",
+    "AR-9",
+    "AR-10",
+    "AR-11",
+    "AR-12",
+    "AR-13",
+    "AR-14",
+    "AR-15",
+    "AR-16"
+  ],
+  "notes": [
+    "This object is read-only to every Rootstock runtime role (AR-6).",
+    "Updating the expected digest must never be part of the runtime deployment path."
+  ]
+}

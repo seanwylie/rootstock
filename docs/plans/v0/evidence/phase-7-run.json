@@ -1,0 +1,22 @@
+{
+  "count": 100,
+  "first_cycle": 73,
+  "last_cycle": 172,
+  "elapsed_seconds": 6047,
+  "wake_state": "ENABLED",
+  "wake_schedule": "rate(1 minute)",
+  "reasoner": "stub",
+  "memory_prior_cycle": 122,
+  "memory_kind": "learned",
+  "memory_expected_outcome_met": true,
+  "later_cycle_observed_hash": "48e98b56cc6a40841c5b7dcc5316578371209e8ad3e98e738ca9bccf735db686",
+    "cloudtrail_joined": 99,
+    "cloudtrail_orphans": [],
+    "claims_executed": 100,
+  "runtime_ms": 5519,
+  "runtime_samples": 101,
+  "broker_ms": 4776,
+  "broker_samples": 101,
+  "cost_usd": 4.3295919125000005e-05,
+  "finished_at": "2026-08-26T20:25:53.701392+00:00"
+}

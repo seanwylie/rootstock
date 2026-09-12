@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "actors": {
+    "rootstock-runtime": {
+      "granted": [
+        "memory.read",
+        "memory.write",
+        "sandbox.s3.create_bucket",
+        "sandbox.s3.put_object",
+        "sandbox.s3.list",
+        "sandbox.logs.read"
+      ]
+    }
+  },
+  "never_granted": [
+    "management.*",
+    "org.*",
+    "iam.policy.write",
+    "commerce.payout",
+    "constitution.write",
+    "capability.grant"
+  ]
+}

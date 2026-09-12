@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CreateThisBucket",
+      "Effect": "Allow",
+      "Action": ["s3:CreateBucket"],
+      "Resource": "{{bucket_arn}}"
+    },
+    {
+      "Sid": "TagThisBucket",
+      "Effect": "Allow",
+      "Action": ["s3:PutBucketTagging"],
+      "Resource": "{{bucket_arn}}"
+    },
+    {
+      "Sid": "ReconcileThisBucket",
+      "Effect": "Allow",
+      "Action": ["s3:ListBucket"],
+      "Resource": "{{bucket_arn}}"
+    }
+  ]
+}

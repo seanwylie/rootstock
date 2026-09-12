@@ -1,0 +1,17 @@
+{
+  "id": "sandbox.s3.list",
+  "schema_version": 1,
+  "description": "Enumerate Rootstock-owned Sandbox buckets",
+  "zone": "sandbox",
+  "parameter_schema": {},
+  "scope": "buckets prefixed rootstock-sbx-*",
+  "risk_class": "low",
+  "autonomy_level": "L4",
+  "requires_approval": false,
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": true,
+    "reconciliation": "none",
+    "retry_after_unknown": "retry"
+  }
+}

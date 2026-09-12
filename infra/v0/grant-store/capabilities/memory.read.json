@@ -1,0 +1,17 @@
+{
+  "id": "memory.read",
+  "schema_version": 1,
+  "description": "Read institutional and state memory",
+  "zone": "core",
+  "parameter_schema": {},
+  "scope": "rootstock-memory table",
+  "risk_class": "low",
+  "autonomy_level": "L4",
+  "requires_approval": false,
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": true,
+    "reconciliation": "none",
+    "retry_after_unknown": "retry"
+  }
+}

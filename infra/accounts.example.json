@@ -1,0 +1,30 @@
+{
+  "_comment": [
+    "Template for infra/accounts.json. Copy to accounts.json and put the operator's",
+    "Core and Sandbox account ids there. accounts.json is gitignored.",
+    "",
+    "Account ids are STRINGS. A Sandbox id that begins with a zero silently corrupts if",
+    "any consumer treats it as a number — keep the leading zero in the example so that",
+    "lesson stays testable.",
+    "",
+    "The Management account is deliberately absent. There is no profile here that resolves",
+    "to it, so no tooling in this repository can target it even by mistake (AR-1, AR-2).",
+    "Management is operated by hand, from a separate credential path, on purpose."
+  ],
+  "profiles": {
+    "rootstock-core": {
+      "account_id": "111111111111",
+      "zone": "core",
+      "description": "Rootstock Core - runtime, memory, ledger, policy engine, audit"
+    },
+    "rootstock-sandbox": {
+      "account_id": "022222222222",
+      "zone": "sandbox",
+      "description": "Rootstock Sandbox - disposable experiments and capability targets"
+    }
+  },
+  "forbidden_profiles": [
+    "default"
+  ],
+  "require_sso_principal": true
+}

@@ -1,0 +1,17 @@
+{
+  "id": "memory.write",
+  "schema_version": 1,
+  "description": "Append a claim or state record",
+  "zone": "core",
+  "parameter_schema": {"claim": {"type": "object", "required": true}},
+  "scope": "rootstock-memory table, append only",
+  "risk_class": "low",
+  "autonomy_level": "L4",
+  "requires_approval": false,
+  "execution_semantics": {
+    "reversible": true,
+    "provider_idempotency": false,
+    "reconciliation": "item_exists",
+    "retry_after_unknown": "reconcile_then_retry"
+  }
+}
